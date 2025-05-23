@@ -1,5 +1,5 @@
 // heap.cpp
-// Diba Mirza
+// Oscar Valeriano
 
 #include "heap.h"
 #include <iostream>
@@ -9,7 +9,7 @@ using std::cout;
 // the heap is correctly arranged
 void Heap::push(int value){
   data.push_back(value);
-  size_t i = data.size() - 1;
+  std::size_t i = data.size() - 1;
   while (i > 0) {
     std::size_t p = (i - 1) / 2;        
     if (data[i] < data[p]) {
@@ -29,8 +29,8 @@ void Heap::pop(){
   if (data.empty()){
     return;
   }
-  std::data[0] = data.back();
-  std::data.pop_back();
+  data[0] = data.back();
+  data.pop_back();
   if (data.empty()) return;
   std::size_t i = 0, n = data.size();
     while (true) {
