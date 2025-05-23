@@ -29,8 +29,8 @@ void Heap::pop(){
   if (data.empty()){
     return;
   }
-  data[0] = data.back();
-  data.pop_back();
+  std::data[0] = data.back();
+  std::data.pop_back();
   if (data.empty()) return;
   std::size_t i = 0, n = data.size();
     while (true) {
