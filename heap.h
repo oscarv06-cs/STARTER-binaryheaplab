@@ -1,7 +1,6 @@
 // heap.h
 // Binary heap tree header file for CS 24 lab
-// Diba Mirza
-
+//Oscar Valeriano
 #ifndef HEAP_H
 #define HEAP_H
 
@@ -17,7 +16,7 @@ class Heap{
     bool empty();
     
  private:
-    std::vector<int> vdata; //store the binary heap tree as a dynamic array
+    std::vector<int> data; //store the binary heap tree as a dynamic array
 };
 
 #endif
